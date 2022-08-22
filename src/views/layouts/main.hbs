@@ -20,12 +20,13 @@
 		<link type="text/css" rel="stylesheet" href="/css/main.css"></link>
 	</head>
 	<body>
-		<p>Navigation</p>
-		<div class="container py-4">
+		{{> navigation}}
+		<main class="container mt-3">
+
 			{{> messages}}
 			{{> errors}}
 			{{{body}}}
-		</div>
+		</main> 
 		<footer footer class="pt-3 mt-4 text-muted border-top">Footer</footer>
 	
 		<script
